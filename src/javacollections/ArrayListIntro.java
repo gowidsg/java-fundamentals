@@ -37,11 +37,12 @@ public class ArrayListIntro {
 		}
 
 		name.set(2, "Saurabh Singh");
-
+		System.out.println("S");
 		System.out.println(name);
 		Collections.sort(name);
 		System.out.println("Sorting array list: " + name);
 
+		System.out.println("Adding student object to arraylist:");
 		Student s1 = new Student(1, "Yadav");
 		Student s2 = new Student(2, "Gupta");
 
@@ -50,10 +51,11 @@ public class ArrayListIntro {
 		stu.add(s2);
 
 		Iterator st = stu.iterator();
-		while (st.hasNext()) {
-			Student str = (Student) st.next();
-			System.out.println(str.rollNo + " " + str.name);
-		}
+//		while (st.hasNext()) {
+//			Student str = (Student) st.next();
+//			System.out.println(str.rollNo + " " + str.name);
+//		}
+		
 
 	}
 

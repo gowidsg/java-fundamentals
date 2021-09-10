@@ -23,18 +23,18 @@ public class QueueInterfaceIntro {
 		pq.add("p6");
 		pq.add("p5");
 		
-		for (String i : pq) {
-			System.out.print(i+" ");
-		}
-		
+		System.out.println(pq);
 		pq.remove();
 		pq.poll();
 		
 		System.out.println("\nAfter removing two elements");
-		for (String i : pq) {
-			System.out.print(i+" ");
-		}
+		System.out.println(pq);
+		
+		pq.offer("p7");
 
+		System.out.println("\n"+pq);
+		
+		System.out.println("Head element: "+pq.peek()+" "+pq.element());
 
 	}
 

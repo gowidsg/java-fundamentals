@@ -23,6 +23,13 @@ public class DequeInterfaceIntro {
 		while (i.hasNext()) {
 			System.out.println(i.next());
 		}
+		d.offer("tail");
+
+		System.out.println(d);
+
+		System.out.println(d.poll() + " " + d.pollFirst() + " " + d.pollLast());
+		
+		System.out.println(d);
 
 	}
 
